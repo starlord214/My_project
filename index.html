@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="container-box">
+
+            <img src="image2.jpg"
+                width="330" />
+
+            <h3 class="mt-3">Score: <span id="score">0</span></h3>
+            <h4>Highest Score: <span id="highScore">0</span></h4>
+
+            <div class="mt-4">
+                <span id="firstNumber" class="number"></span>
+                <span class="operator">+</span>
+                <span id="secondNumber" class="number"></span>
+                <span class="operator">=</span>
+
+                <input id="userInput" type="text" class="user-input" />
+            </div>
+
+            <div class="mt-4">
+                <button class="btn btn-primary mr-3" onclick="checkAnswer()">Check</button>
+                <button class="btn btn-warning" onclick="restartGame()">Restart</button>
+            </div>
+
+            <p id="result" class="result-box"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
